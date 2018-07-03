@@ -1,6 +1,6 @@
 # basketballtour
 
-[Edit this project on StackBlitz](https://stackblitz.com/edit/basketballtour)
+[Have a tour on StackBlitz](https://basketballtour.stackblitz.io)
 
 This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
 
