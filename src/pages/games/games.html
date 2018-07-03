@@ -1,0 +1,31 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <ion-title>Game</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-card>
+      <ion-card-content> 
+        <ion-row align-items-center>
+          <ion-col>
+            <button ion-button round color="light" (click)="teamTapped(game.team1Id)">{{game.team1}}</button>
+          </ion-col>
+           <ion-col>
+            <h2>Home Team</h2>
+          </ion-col>
+        </ion-row>
+
+        <ion-row justify-content-center><h1>VS</h1></ion-row>
+
+        <ion-row align-items-center>
+          <ion-col>
+            <h2>Away Team</h2>
+          </ion-col>
+          <ion-col>
+             <button ion-button round color="light" (click)="teamTapped(game.team2Id)">{{game.team2}}</button>
+          </ion-col>
+          </ion-row> 
+      </ion-card-content>
+    </ion-card>
+</ion-content>

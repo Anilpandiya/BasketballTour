@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Select A Tournament</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+ 
+ <ion-list>
+
+ <button *ngFor="let t of tournaments" ion-item (click)="tapped($event, t)">
+   {{t.name}}
+ </button>
+ </ion-list>            
+</ion-content>

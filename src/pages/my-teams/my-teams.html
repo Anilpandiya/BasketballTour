@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button  ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>BasketBall Journey</ion-title>
+   
+  </ion-navbar>
+
+  <ion-toolbar color="secondary">
+    <ion-title>My Teams</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+   <ion-card *ngIf="!favourite">
+     <ion-card-header> No Team Followed</ion-card-header>
+     <ion-card-content>
+         <p> You have to select a team as your favourite.</p> 
+         <button ion-button icon-left round outline (click)="goToTournaments()">
+                <ion-icon name="search"></ion-icon> Find A Tournament
+         </button>
+     </ion-card-content>
+   </ion-card>
+
+    <ion-card *ngIf="favourite">
+      <ion-card-header>Followed Teams</ion-card-header>
+      <ion-card-content>
+          <ion-list>
+              <button ion-item *ngFor="let item of favourite" (click)="favTapped($event,item)">
+                     <ion-icon name="star"></ion-icon>
+                         {{item.team.name}}
+                     <p>{{item.tourName}}</p>
+              </button>
+          </ion-list>
+          <p>To follow more teams !</p>
+
+          <button ion-button icon-left round outline (click)="goToTournaments()">
+               <ion-icon name="search"></ion-icon> Find A Tournament
+          </button>
+      </ion-card-content>
+      
+
+     
+    </ion-card>
+    
+
+</ion-content>
