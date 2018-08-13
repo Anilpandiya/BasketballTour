@@ -1,6 +1,12 @@
-# basketballtour
+App that having a complete basketball tour with teams, scores, standings, stats and many other things. This application is build with Ionic and Angular.
 
 [Have a tour on StackBlitz](https://basketballtour.stackblitz.io)
+
+[!alt text] (http://i64.tinypic.com/29xdslu.png)
+[!alt text] (http://i68.tinypic.com/ea07k8.png)
+[!alt text] (http://i64.tinypic.com/hw0ppu.png)
+[!alt text](http://i68.tinypic.com/vx0zmt.png)
+[!alt text] (http://i68.tinypic.com/157g195.png)
 
 This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
 
